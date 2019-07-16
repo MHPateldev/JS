@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="./Css/Index.css">
+	<script src="JS\jquery-3.4.1.js"></script>
+	<script src="JS\jquery-ui.js"></script>
+    <script src="JS\Js.js"></script>
+    <script>
+	$(function(){
+        //$("#faqs h1").fadeOut(1000).fadeIn(1000);
+        $("#faqs h1").animate({fontSize:"275%",
+                                opacity:1,
+                                "left":"+=275px"}
+                                ,10000,"easeOutBounce",
+                                function(){
+                                $("h2 a").fadeOut(500).fadeIn(500);
+                                $("h2 a").slideUp(1000).slideDown(1000);});
+
+	});
+	</script>
+</head>
+<body>
+<main id ="faqs" style="position: relative; left: 10px;">
+	<h1>JQuery FAQs</h1>
+	<h2><a href="#">What is jQuery?</a></h2>
+	<div>
+		jQuery is a javascript framework......
+	</div>
+	<h2><a href="#">Why is jQuery becoming so popular?</a></h2>
+	<div>
+		because it is awsome.....
+	</div>
+	<h2><a href="#">Which is harder to learn: jQuery or javascript?</a></h2>
+	<div>
+		Both are easy to learn but jQuery is easiest.....
+	</div>
+</main>
+</body>
+</html>
